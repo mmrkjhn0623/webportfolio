@@ -1,2 +1,2 @@
-# mj-webportfolio
+# webportfolio
 My Portfolio Site
