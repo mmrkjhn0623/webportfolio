@@ -315,15 +315,15 @@ const Layout = () => {
             <div className="sidenav" id="sideNav" /* style={{backgroundColor: "rgba("+themecolor+",0.90)"}} */ >
                     <div className="sidebar-content">
                     <a href="#"  onClick={event => displayProfile()} className="profile sidenav-profile">
-                            <img src="../img/profilepic.png" className="profileimg" />
+                            <img src="/webportfolio/img/profilepic.png" className="profileimg" />
                                 <span className="profilename">Mark John</span>
                     </a>
-                    <Link to="/" className="sidenav-home"><img src="../img/home.png" className="menuicon" /><span className="menulabel">Home</span></Link>
-                    <Link to="/projects" className="sidenav-projects"><img src="../img/projects.png" className="menuicon" /><span className="menulabel">Projects</span></Link>
-                    <Link to="/tools" className="sidenav-tools"> <img src="../img/tools.png" className="menuicon" /><span className="menulabel">Tools</span></Link>
-                    <Link to="/blogs" className="sidenav-blogs"><img src="../img/blogs.png" className="menuicon" /><span className="menulabel">Blogs</span></Link>
-                    <Link to="/contact" className="sidenav-contact"><img src="../img/contact.png" className="menuicon" /><span className="menulabel">Contact</span></Link>
-                    <Link to="/settings" className="sidenav-settings"><img src="../img/setting.png" className="menuicon" /><span className="menulabel">Settings</span></Link>
+                    <Link to="/" className="sidenav-home"><img src="/webportfolio/img/home.png" className="menuicon" /><span className="menulabel">Home</span></Link>
+                    <Link to="/projects" className="sidenav-projects"><img src="/webportfolio/img/projects.png" className="menuicon" /><span className="menulabel">Projects</span></Link>
+                    <Link to="/tools" className="sidenav-tools"> <img src="/webportfolio/img/tools.png" className="menuicon" /><span className="menulabel">Tools</span></Link>
+                    <Link to="/blogs" className="sidenav-blogs"><img src="/webportfolio/img/blogs.png" className="menuicon" /><span className="menulabel">Blogs</span></Link>
+                    <Link to="/contact" className="sidenav-contact"><img src="/webportfolio/img/contact.png" className="menuicon" /><span className="menulabel">Contact</span></Link>
+                    <Link to="/settings" className="sidenav-settings"><img src="/webportfolio/img/setting.png" className="menuicon" /><span className="menulabel">Settings</span></Link>
                     </div>
             </div>
             <div id="loadercont">
@@ -339,8 +339,8 @@ const Layout = () => {
                         <line x1="6" y1="6" x2="18" y2="18"></line>
                       </svg>
                     </button>
-                    <img src="../img/profile-header.jpg" />
-                    <img src="../img/startup-loader.png" className="profile-img" />
+                    <img src="/webportfolio/img/profile-header.jpg" />
+                    <img src="/webportfolio/img/startup-loader.png" className="profile-img" />
                   </div>
                   <div class="profile-info">
                   <h2>I’m a Web Developer looking to continue my career to explore more ideas.</h2>
