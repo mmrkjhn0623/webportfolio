@@ -318,7 +318,7 @@ const Layout = () => {
                             <img src="/webportfolio/img/profilepic.png" className="profileimg" />
                                 <span className="profilename">Mark John</span>
                     </a>
-                    <Link to="/" className="sidenav-home"><img src="/webportfolio/img/home.png" className="menuicon" /><span className="menulabel">Home</span></Link>
+                    <Link to="/webportfolio" className="sidenav-home"><img src="/webportfolio/img/home.png" className="menuicon" /><span className="menulabel">Home</span></Link>
                     <Link to="/projects" className="sidenav-projects"><img src="/webportfolio/img/projects.png" className="menuicon" /><span className="menulabel">Projects</span></Link>
                     <Link to="/tools" className="sidenav-tools"> <img src="/webportfolio/img/tools.png" className="menuicon" /><span className="menulabel">Tools</span></Link>
                     <Link to="/blogs" className="sidenav-blogs"><img src="/webportfolio/img/blogs.png" className="menuicon" /><span className="menulabel">Blogs</span></Link>

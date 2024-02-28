@@ -49,7 +49,8 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route index element={<Home />} />
+                <Route path="/" element={<Home />} />
+                    <Route path="webportfolio" element={<Home />} />
                     <Route path="profile" element={<Profile />} />
                     <Route path="projects" element={<Projects />} />
                     <Route path="tools" element={<Tools />} />
