@@ -43,7 +43,7 @@ const Home = () => {
   }
 
   const loadProjectsforHome = () => {
-    Axios.get("getprojforhome",{withCredentials: true} ).then((response) => {
+    Axios.get("getprojforhome").then((response) => {
         /*document.getElementById('loadercont').style.display = "none";
         document.getElementById('content').style.display = "block";*/
         const obj = response.data;
@@ -57,7 +57,7 @@ const Home = () => {
     });
   }
   const loadToolsforHome = () => {
-    Axios.get("gettoolsforhome", {withCredentials: true} ).then((response) => {
+    Axios.get("gettoolsforhome").then((response) => {
         /*document.getElementById('loadercont').style.display = "none";
         document.getElementById('content').style.display = "block";*/
         const obj = response.data;
@@ -75,7 +75,7 @@ const Home = () => {
   }
 
   const loadLatestBlog = () => {
-    Axios.get("getlatestblog", {withCredentials: true} ).then((response) => {
+    Axios.get("getlatestblog").then((response) => {
         /*document.getElementById('loadercont').style.display = "none";
         document.getElementById('content').style.display = "block";*/
         const obj = response.data;
