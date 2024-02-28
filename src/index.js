@@ -22,8 +22,9 @@ export default function App() {
     const [themecolor, setThemeColor] = useState(localStorage.getItem("themecolor"));
 
     /* Axios.defaults.baseURL = "http://localhost:8000/"; */
-    Axios.defaults.baseURL = "https://mark-john-portfolio-api.de.r.appspot.com";
+    /* Axios.defaults.baseURL = "https://mark-john-portfolio-api.de.r.appspot.com"; */
     /* Axios.defaults.baseURL = "http://13.236.106.100:8080/"; */
+    Axios.defaults.baseURL = "https://animated-pika-ce5a74.netlify.app/.netlify/functions/api/";
   
     function someRequest() { //Simulates a request; makes a "promise" that'll run for 2.5 seconds
       return new Promise(resolve => setTimeout(() => resolve(), 2500));
