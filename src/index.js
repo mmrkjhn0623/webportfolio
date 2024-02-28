@@ -23,7 +23,7 @@ export default function App() {
 
     /* Axios.defaults.baseURL = "http://localhost:8000/"; */
     /* Axios.defaults.baseURL = "https://mark-john-portfolio-api.de.r.appspot.com"; */
-    Axios.defaults.baseURL = "http://13.236.98.255:8080/";
+    Axios.defaults.baseURL = "http://ec2-13-236-98-255.ap-southeast-2.compute.amazonaws.com:8080/";
   
     function someRequest() { //Simulates a request; makes a "promise" that'll run for 2.5 seconds
       return new Promise(resolve => setTimeout(() => resolve(), 2500));
