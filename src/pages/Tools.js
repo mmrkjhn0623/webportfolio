@@ -12,7 +12,7 @@ const Tools = () => {
     const [tools, setTools] = useState([]);
 
     useEffect(() =>{
-      ContentHeader("Tools", "tools");
+      ContentHeader("Tech Skills", "tools");
       //document.getElementById("overlay").style.backgroundColor = "rgba("+themecolor+",0.60)";
       document.getElementById('loadercont').style.display = "block";
       document.getElementById('content').style.display = "none";

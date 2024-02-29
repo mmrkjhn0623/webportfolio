@@ -116,7 +116,7 @@ const Home = () => {
 
             <div className="container" /*style={{backgroundColor: "rgba("+themecolor+",0.60)"}}*/>
                 <div className="cont-header">
-                    <span className="cont-label"><b>Tools</b></span>
+                    <span className="cont-label"><b>Tech Skills</b></span>
                     <Link to="/tools" className="cont-upperright">See More</Link>
                 </div>
 

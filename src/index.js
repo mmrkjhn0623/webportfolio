@@ -53,7 +53,7 @@ export default function App() {
                     <Route path="webportfolio" element={<Home />} />
                     <Route path="profile" element={<Profile />} />
                     <Route path="projects" element={<Projects />} />
-                    <Route path="tools" element={<Tools />} />
+                    <Route path="tech" element={<Tools />} />
                     <Route path="blogs" element={<Blogs />} />
                     <Route path="other" element={<Other />} />
                     <Route path="contact" element={<Contact />} />

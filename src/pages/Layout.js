@@ -320,7 +320,7 @@ const Layout = () => {
                     </a>
                     <Link to="/webportfolio" className="sidenav-home"><img src="/webportfolio/img/home.png" className="menuicon" /><span className="menulabel">Home</span></Link>
                     <Link to="/projects" className="sidenav-projects"><img src="/webportfolio/img/projects.png" className="menuicon" /><span className="menulabel">Projects</span></Link>
-                    <Link to="/tools" className="sidenav-tools"> <img src="/webportfolio/img/tools.png" className="menuicon" /><span className="menulabel">Tools</span></Link>
+                    <Link to="/tech" className="sidenav-tools"> <img src="/webportfolio/img/tools.png" className="menuicon" /><span className="menulabel">Tech Skills</span></Link>
                     <Link to="/blogs" className="sidenav-blogs"><img src="/webportfolio/img/blogs.png" className="menuicon" /><span className="menulabel">Blogs</span></Link>
                     <Link to="/contact" className="sidenav-contact"><img src="/webportfolio/img/contact.png" className="menuicon" /><span className="menulabel">Contact</span></Link>
                     <Link to="/settings" className="sidenav-settings"><img src="/webportfolio/img/setting.png" className="menuicon" /><span className="menulabel">Settings</span></Link>
