@@ -20,7 +20,6 @@
     "react-modal": "^3.16.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -51,6 +50,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
-    "html-loader": "^4.2.0"
+    "html-loader": "^4.2.0",
+    "react-scripts": "^5.0.1"
   }
 }
