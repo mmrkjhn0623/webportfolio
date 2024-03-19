@@ -474,7 +474,7 @@ const Layout = () => {
                   <ul class="footer-list">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/tools">Tools</Link></li>
+                    <li><Link to="/tech">Tech Skills</Link></li>
                     <li><Link to="/blogs">Blogs</Link></li>
                   </ul>
                 </div> 
