@@ -350,8 +350,8 @@ const Layout = () => {
                         <p><b>Phone:  </b><br/> 09358245202</p>
                         <p><b>Email:  </b><br/> mmrkjhn@gmail.com</p>
                         <p><b>Address:  </b><br/> Cebu, Philippines</p>
-                        <p><b>Degree:  </b><br/> BSIT</p>
-                        <p><b>Freelance:  </b><br/> Available</p>
+                        <p><b>Employment Status:  </b><br/> Hired / Full-time</p>
+                        <p><b>Available for:  </b><br/> Part-time and Project based</p>
 
                         <h4 style={{marginTop:'30px'}}>Other things I enjoy</h4>  
                         <p>Playing and listening to music</p> 
@@ -367,7 +367,7 @@ const Layout = () => {
                         After initially offering graphic design, we have since expanded our pool of talents and expertise to web and app development, animation, digital marketing, and employee leasing.</p>
                         <ul>
                             <li className="company-address">8/F Ayala Center Cebu Tower, Cebu City, Philippines 6000</li>
-                            <li className="company-contact">+63.32.495.1412</li>
+                            <li className="company-contact">+63324951412</li>
                             <li className="company-site"><a href="https://ripeconcepts.com/" target="_blank">https://ripeconcepts.com/</a></li>
                         </ul>
                         <h4>Freelancing - Web/Wordpress Developer (Sept 2020 - June 2022)</h4>
@@ -378,11 +378,11 @@ const Layout = () => {
                         <ul>
                             <li className="company-address">Work From Home</li>
                             <li className="company-contact">09358245202</li>
-                            <li className="company-site">mmrkjhn@gmail.com</li>
+                            <li className="company-site"><a href="mailto:mmrkjhn@gmail.com" target="_blank">mmrkjhn@gmail.com</a></li>
                         </ul>
                       <h3 style={{marginTop:'40px'}}>Education</h3>
                       <h4>Bachelor of Science in Information Technology (2013)</h4>
-                      <p>Cebu Roosevelt Memorial Colleges - Bogo City, Cebu</p>
+                      <p>Cebu Roosevelt Memorial Colleges <br/> San Vicente St., Bogo City, Cebu, Philippines</p>
                         
                     </div>
                   </div>
