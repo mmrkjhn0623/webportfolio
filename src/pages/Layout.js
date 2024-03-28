@@ -343,7 +343,7 @@ const Layout = () => {
                     <img src="/webportfolio/img/startup-loader.png" className="profile-img" />
                   </div>
                   <div class="profile-info">
-                  <h2>I’m a Web Developer looking to continue my career to explore more ideas.</h2>
+                  <h3>I’m a Web Developer looking to continue my career to explore more ideas. I have excellent design & coding skills, as well as an ability to convert client requirements into an exciting online applications.</h3>
                   <div className='profile-info-cont'>
                     <div class="profile-about-grid">
                     <h4 style={{marginTop:'0px'}}>Basic Info</h4>
@@ -380,34 +380,9 @@ const Layout = () => {
                             <li className="company-contact">09358245202</li>
                             <li className="company-site">mmrkjhn@gmail.com</li>
                         </ul>
-                      <h3 style={{marginTop:'40px'}}>Skills</h3>
-                      <p>I have excellent design & coding skills, as well as an ability to convert client 
-                    requirements into an exciting online applications.</p>
-                <div class="profile-skill">
-                <div class="profile-skill-item">
-                <p><b>HTML</b></p>
-                <progress id="file" value="100" max="100"> 100% </progress>
-                </div>
-                <div class="profile-skill-item">
-                <p><b>PHP</b></p>
-                <progress id="file" value="75" max="100"> 75% </progress>
-                </div>
-                <div class="profile-skill-item">
-                <p><b>CSS</b></p>
-                <progress id="file" value="85" max="100"> 85% </progress>
-                </div>
-                <div class="profile-skill-item">
-                <p><b>Wordpress/CMS</b></p>
-                <progress id="file" value="80" max="100"> 80% </progress>
-                </div>
-                <div class="profile-skill-item">
-                <p><b>Javascript</b></p>
-                <progress id="file" value="70" max="100"> 70% </progress>
-                </div>
-                <div class="profile-skill-item">
-                <p><b>Graphic Design</b></p>
-                <progress id="file" value="50" max="100"> 50% </progress>
-                </div></div>
+                      <h3 style={{marginTop:'40px'}}>Education</h3>
+                      <h4>Bachelor of Science in Information Technology (2013)</h4>
+                      <p>Cebu Roosevelt Memorial Colleges - Bogo City, Cebu</p>
                         
                     </div>
                   </div>
