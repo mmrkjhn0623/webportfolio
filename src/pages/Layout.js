@@ -343,7 +343,8 @@ const Layout = () => {
                     <img src="/webportfolio/img/startup-loader.png" className="profile-img" />
                   </div>
                   <div class="profile-info">
-                  <h3>I’m a Web Developer looking to continue my career to explore more ideas. I have excellent design & coding skills, as well as an ability to convert client requirements into an exciting online applications.</h3>
+                  <p>I’m a Web Developer looking to continue my career to explore more ideas. I have excellent design & coding skills, as well as an ability to convert client requirements into an exciting online applications.</p>
+                  <br/>
                   <div className='profile-info-cont'>
                     <div class="profile-about-grid">
                     <h4 style={{marginTop:'0px'}}>Basic Info</h4>
