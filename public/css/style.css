@@ -1245,6 +1245,6 @@ a.addnew:hover{
         stroke: #700f3b;
         fill: transparent;
     }
-    body.df-theme .content a:hover, body.sk-theme div.footer ul li a:hover{
+    body.sk-theme .content a:hover, body.sk-theme div.footer ul li a:hover{
         color: #700f3b !important;
     }
