@@ -48,7 +48,7 @@ const Contact = () => {
     }
 
     return (<>
-        <div className="container" style={{maxWidth: "1080px"}}>
+        <div className="container" style={{maxWidth: "680px", marginBottom: "120px"}}>
             <div className="cont-header">
                 <span className="cont-label"><b>Let's work together!</b></span>
                 <p>Like my work and want something similar for your company? Sure, let's get to business.</p>
