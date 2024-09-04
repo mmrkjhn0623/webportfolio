@@ -12,8 +12,10 @@ const Settings = () => {
             document.body.classList = [];
             document.body.classList.add("df-theme");
         }
-        else if(theme === 'green'){
-            localStorage.setItem("themecolor","18,36,22");
+        else if(theme === 'sk'){
+            localStorage.setItem("theme","sk-theme");
+            document.body.classList = [];
+            document.body.classList.add("sk-theme");
         }
         else if(theme === 'yellow'){
             localStorage.setItem("themecolor","54,54,33");
@@ -65,6 +67,12 @@ const Settings = () => {
                     <a onClick={event => ContainerColor('dk')}>
                     <img src={cloudstorage+"/themes/dk-theme.png"} className="itemimg" />
                     <h4 style={{textAlign:"center"}}>Dark Theme</h4>
+                    </a>
+                </div>
+                <div className="grid-content">
+                    <a onClick={event => ContainerColor('sk')}>
+                    <img src={cloudstorage+"/themes/sk-theme.png"} className="itemimg" />
+                    <h4 style={{textAlign:"center"}}>Pink Theme</h4>
                     </a>
                 </div>
             </div>

@@ -145,7 +145,7 @@ button, input[type="submit"]{
 .overlay {
     width: 100vw;
     min-height:100vh;
-    background-color: #18191a;
+    background-color: transparent;
     margin:0;
     padding:0;
 }
@@ -537,7 +537,7 @@ a:link {
         text-align: center;
     }
     .grid-content p{
-        color: #868686 !important; 
+        color: #868686; 
         margin-top: 10px;
     }
 
@@ -652,6 +652,10 @@ a:link {
     .article p{
         font-size: 16px;
         color:#D3D3D3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
     }
     .post-content{
         font-size: 16px;
@@ -1086,15 +1090,15 @@ a.addnew:hover{
     body.df-theme .sidenav, body.df-theme .menu-toggle {
         background-color:#23282d;
     }
-
     body.df-theme #root{
-        background-color:#f3f2f1 !important;
+        background-color:#f3f2f1;
         color:#2d2d2d;
     }
     body.df-theme #overlay{
         background-color:transparent !important;
     }
-    body.df-theme .container, body.df-theme div.article.home{
+    body.df-theme .container, body.df-theme div.article.home,
+    body.sk-theme .container, body.sk-theme div.article.home{
         background-color:rgba(255,255,255,0.5) !important; 
         border: 1px solid #d3d3d3;
     }
@@ -1122,7 +1126,8 @@ a.addnew:hover{
         border: 1px solid #d3d3d3;
         color: #2d2d2d;
     }
-    body.df-theme .adminaction li:hover{
+    body.df-theme .adminaction li:hover,
+    body.sk-theme .adminaction li:hover{
         background-color: rgba(0,0,0,0.1);
     }
     body.df-theme  input[type=submit]{
@@ -1133,7 +1138,8 @@ a.addnew:hover{
     body.df-theme  input[type=submit]:hover{
         background-color:rgba(0,0,0,0.1);
     }
-    body.df-theme .grid-content:hover, body.df-theme div.article.home:hover{
+    body.df-theme .grid-content:hover, body.df-theme div.article.home:hover,
+    body.sk-theme .grid-content:hover, body.sk-theme div.article.home:hover{
         background-color:rgba(0,0,0,0.06) !important;
     }
     body.df-theme .cont-label, body.df-theme .article .cont-label{
@@ -1156,7 +1162,7 @@ a.addnew:hover{
     body.df-theme div.footer ul li a{
         color: #595959;
     }
-    body.df-theme div.container.footer{
+    body.df-theme div.container.footer, body.sk-theme div.container.footer{
         background-color: transparent !important;
         border:0;    
     }
@@ -1186,5 +1192,59 @@ a.addnew:hover{
         background-color: rgba(0,0,0,0.2);
     }
     
-   
-    
+    /*Pink Theme*/
+    body.sk-theme .sidenav, body.sk-theme .menu-toggle {
+        background-color:#700f3b;
+    }
+    body.sk-theme #root{
+        background-color:#f2ceda;
+        color:#700f3b;
+    }
+    body.sk-theme .container, body.sk-theme div.article.home, body.sk-theme .grid-content{
+        border: 1px solid rgba(112,15,59,0.1);
+        background-color: #faf0f3;
+    }
+    body.sk-theme .grid-content h3, body.sk-theme .grid-content h4, body.sk-theme div.footer h4, body.sk-theme .deletion a,    
+    body.sk-theme .cont-label, body.sk-theme .article .cont-label{
+        color:#700f3b;
+    }
+    body.sk-theme .grid-content p, body.sk-theme .article p, body.sk-theme div.footer h4, body.sk-theme div.footer ul li a,
+    body.sk-theme div.container.footer{
+        color: #926479 !important;
+    }
+    body.sk-theme div.footer ul li a path{
+        fill: #926479;
+    }
+    body.sk-theme li#telno path{
+        stroke: #926479;
+        fill: transparent;
+    }
+    body.sk-theme a.cont-upperright, body.sk-theme .post-content p{
+        color: #673e51;
+    }
+    body.sk-theme .itemimg {
+        background-color: rgba(242,206,218,0.8);
+    }
+    body.sk-theme input, body.sk-theme textarea, body.sk-theme select, body.sk-theme select option, body.sk-theme .adminaction{
+        border: 1px solid rgba(112,15,59,0.1);
+        background-color: #faf0f3;
+        color: #700f3b;
+    }
+    body.sk-theme input[type=submit] {
+        background-color: #f7d9e2;
+        border: 0;
+        color: #700f3b;
+    }
+    body.sk-theme  input[type=submit]:hover{
+        background-color: #f8c3d3;
+    }
+    body.sk-theme ul.social-media li:hover path, body.sk-theme .footer-list li:hover path{
+        fill: #700f3b;
+    }
+    body.sk-theme li#telno:hover path{
+        stroke: #700f3b;
+        fill: transparent;
+    }
+    body.df-theme .content a:hover, body.sk-theme div.footer ul li a:hover{
+        color: #700f3b !important;
+    }
