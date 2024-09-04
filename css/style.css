@@ -351,7 +351,7 @@ a:link {
         color: #FFFFFF;
     }
     .contactform, .deleteform{
-        padding-top: 30px;
+        padding-top: 0px;
     }
     .deletion a{
         color: #FFFFFF;
@@ -411,6 +411,9 @@ a:link {
         display: grid;
         grid-template-columns: auto auto;
         gap: 30px;
+    }
+    .contactform .form-group{
+        grid-template-columns: 100%;
     }
     .form-group.deletion{
         display: flex;
@@ -811,7 +814,7 @@ li#telno:hover path{
     color: #FFFFFF;
 }
 div.footer{
-    margin: 180px auto 0px auto !important;
+    margin: 60px auto 0px auto !important;
     /* margin-bottom: 0px; */
     max-width: 1280px;
     padding: 0px;
