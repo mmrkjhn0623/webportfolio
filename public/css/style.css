@@ -811,7 +811,7 @@ li#telno:hover path{
     color: #FFFFFF;
 }
 div.footer{
-    margin: 60px auto 0px auto !important;
+    margin: 180px auto 0px auto !important;
     /* margin-bottom: 0px; */
     max-width: 1280px;
     padding: 0px;
@@ -1113,7 +1113,7 @@ a.addnew:hover{
     body.df-theme .profile-cont a{
         color: #2d2d2d !important;
     }
-    body.df-theme .career-and-skill li::before{
+    body.df-theme .career-and-skill li::before, body.sk-theme .career-and-skill li::before{
         filter: brightness(0.4);
     }
     body.df-theme .grid-content{
@@ -1247,4 +1247,13 @@ a.addnew:hover{
     }
     body.sk-theme .content a:hover, body.sk-theme div.footer ul li a:hover{
         color: #700f3b !important;
+    }
+    body.sk-theme .profile-cont {
+        background-color: #faf0f3 !important;
+        color: #700f3b !important;
+        border-color: rgba(112,15,59,0.1) !important;
+    }
+    body.sk-theme .profile-about-grid p b, body.sk-theme .profile-info p, body.sk-theme .profile-info li,
+    body.sk-theme .profile-cont a{
+        color: #926479;
     }
