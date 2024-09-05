@@ -1194,7 +1194,8 @@ a.addnew:hover{
     body.df-theme img#selecteduploadimg{
         background-color: rgba(0,0,0,0.2);
     }
-    body.df-theme .post-content{
+    body.df-theme .post-content h1, body.df-theme .post-content h2, body.df-theme .post-content h3, body.df-theme .post-content h4,
+    body.df-theme .post-content h5{
         color: #595959;
     }
     
@@ -1263,6 +1264,7 @@ a.addnew:hover{
     body.sk-theme .profile-cont a{
         color: #926479;
     }
-    body.sk-theme .post-content{
+    body.sk-theme .post-content h1, body.sk-theme .post-content h2, body.sk-theme .post-content h3, body.sk-theme .post-content h4,
+    body.sk-theme .post-content h5{
         color: #673e51;
     }
