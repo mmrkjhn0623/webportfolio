@@ -355,9 +355,9 @@ const Layout = () => {
                         <p><b>Email:  </b><br/> mmrkjhn@gmail.com</p>
                         <p><b>Address:  </b><br/> Cebu, Philippines</p>
                         <p><b>Employment Status:  </b><br/> Hired / Full-time</p>
-                        <p><b>Available for:  </b><br/> Part-time and Project based</p>
+                        <p><b>Available for:  </b><br/> Project based</p>
 
-                        <h4 style={{marginTop:'30px'}}>Other things I enjoy</h4>  
+                        <h4 style={{marginTop:'26px'}}>Other things I enjoy</h4>  
                         <p>Playing and listening to music</p> 
                         <p>Watching Anime</p>
                         <p>Reading IT News and Trends</p>
