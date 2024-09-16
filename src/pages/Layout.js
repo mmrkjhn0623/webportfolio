@@ -346,7 +346,7 @@ const Layout = () => {
                     </div>                
                   </div>
                   <div class="profile-info">
-                  <p>I’m a Web Developer looking to continue my career to explore more ideas. I have excellent design & coding skills, as well as an ability to convert client requirements into an exciting online applications.</p>
+                  <h4 style={{fontSize: '18px', fontWeight: '400'}}>I’m a Web Developer looking to continue my career to explore more ideas. I have excellent design & coding skills, as well as an ability to convert client requirements into an exciting online applications.</h4>
                   <br/>
                   <div className='profile-info-cont'>
                     <div class="profile-about-grid">
@@ -357,7 +357,7 @@ const Layout = () => {
                         <p><b>Employment Status:  </b><br/> Hired / Full-time</p>
                         <p><b>Available for:  </b><br/> Project based</p>
 
-                        <h4 style={{marginTop:'26px'}}>Other things I enjoy</h4>  
+                        <h4 style={{marginTop:'30px'}}>Other things I enjoy</h4>  
                         <p>Playing and listening to music</p> 
                         <p>Watching Anime</p>
                         <p>Reading IT News and Trends</p>
