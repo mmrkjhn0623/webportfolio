@@ -342,7 +342,7 @@ const Layout = () => {
                     <img src="/webportfolio/img/profile-header.jpg" />
                     <div className="dp-and-resume">
                       <img src="/webportfolio/img/startup-loader.png" className="profile-img" />
-                      <a href="https://storage.googleapis.com/mark-john-portfolio.appspot.com/data/resume/mj_resume.pdf" target="_blank">Download Resume</a>
+                      <a href="https://storage.googleapis.com/mark-john-portfolio.appspot.com/data/resume/Mark%20John%20Resume.pdf" target="_blank">Download Resume</a>
                     </div>                
                   </div>
                   <div class="profile-info">
@@ -354,8 +354,8 @@ const Layout = () => {
                         <p><b>Phone:  </b><br/> 09358245202</p>
                         <p><b>Email:  </b><br/> mmrkjhn@gmail.com</p>
                         <p><b>Address:  </b><br/> Cebu, Philippines</p>
-                        <p><b>Employment Status:  </b><br/> Hired / Full-time</p>
-                        <p><b>Available for:  </b><br/> Project based</p>
+                        <p><b>Employment Status:  </b><br/> Freelancing</p>
+                        <p><b>Available for:  </b><br/> Full time</p>
 
                         <h4 style={{marginTop:'30px'}}>Other things I enjoy</h4>  
                         <p>Playing and listening to music</p> 
@@ -366,7 +366,7 @@ const Layout = () => {
                     </div>
                     <div className="career-and-skill">
                       <h3>Career Info</h3>
-                        <h4>RipeConcepts - Wordpress Developer (July 2022 - Present)</h4>
+                        <h4>RipeConcepts - Wordpress Developer (July 2022 - Sept 2024)</h4>
                         <p>RipeConcepts was founded by two award-winning entrepreneurs in 2008 with the sole aim of developing on-trend creative and tailored solutions for every client. 
                         After initially offering graphic design, we have since expanded our pool of talents and expertise to web and app development, animation, digital marketing, and employee leasing.</p>
                         <ul>
