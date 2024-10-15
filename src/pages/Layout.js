@@ -342,7 +342,7 @@ const Layout = () => {
                     <img src="/webportfolio/img/profile-header.jpg" />
                     <div className="dp-and-resume">
                       <img src="/webportfolio/img/startup-loader.png" className="profile-img" />
-                      <a href="https://storage.googleapis.com/mark-john-portfolio.appspot.com/data/resume/Mark%20John%20Resume.pdf" target="_blank">Download Resume</a>
+                      <a href="https://storage.googleapis.com/mark-john-portfolio.appspot.com/data/resume/MarkJohnCV.pdf" target="_blank">Download Resume</a>
                     </div>                
                   </div>
                   <div class="profile-info">
