@@ -1234,6 +1234,11 @@ body.df-theme #root {
 body.df-theme #overlay {
   background-color: transparent !important;
 }
+body.df-theme .loadingph {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f8f8f8 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
+}
 body.df-theme .container,
 body.df-theme div.article.home,
 body.sk-theme .container,
@@ -1370,6 +1375,11 @@ body.sk-theme .menu-toggle {
 body.sk-theme #root {
   background-color: #f2ceda;
   color: #700f3b;
+}
+body.sk-theme .loadingph {
+  background: linear-gradient(90deg, #e0e0e0 25%, #faf0f3 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
 }
 body.sk-theme .container,
 body.sk-theme div.article.home,
