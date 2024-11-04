@@ -359,7 +359,7 @@ const Layout = () => {
           </Link>
         </div>
       </div>
-      <div id="loadercont">
+      <div id="loadercont" className="content">
         <div class="loading-heading">
           <span
             className="loadingph"
@@ -389,7 +389,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "184px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -407,7 +407,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "184px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -425,7 +425,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "184px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -443,7 +443,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "184px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -479,7 +479,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "106px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -497,7 +497,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "106px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -515,7 +515,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "106px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -533,7 +533,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "106px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -551,7 +551,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "106px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
@@ -569,7 +569,7 @@ const Layout = () => {
             <div class="grid-content">
               <span
                 className="loadingph"
-                style={{ width: "100%", height: "106px" }}
+                style={{ width: "100%", aspectRatio: "245/184" }}
               ></span>
               <h4 style={{ margin: "20px 0px 5px 0px" }}>
                 <span
