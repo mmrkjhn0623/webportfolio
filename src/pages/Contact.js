@@ -64,6 +64,9 @@ const Contact = () => {
         setTimeout(() => {
           document.getElementById("messagesend").value = "Send!";
           document.getElementById("messagesend").disabled = false;
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
           openModal();
         }, 2000);
       });
