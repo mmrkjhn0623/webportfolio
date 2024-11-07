@@ -329,7 +329,7 @@ const Layout = () => {
             <img src="/img/profilepic.png" className="profileimg" />
             <span className="profilename">Mark John</span>
           </a>
-          <Link to="/webportfolio" className="sidenav-home">
+          <Link to="/" className="sidenav-home">
             <img src="/img/home.png" className="menuicon" />
             <span className="menulabel">Home</span>
           </Link>
