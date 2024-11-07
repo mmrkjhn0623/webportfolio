@@ -326,35 +326,32 @@ const Layout = () => {
             onClick={(event) => displayProfile()}
             className="profile sidenav-profile"
           >
-            <img
-              src="/webportfolio/img/profilepic.png"
-              className="profileimg"
-            />
+            <img src="/img/profilepic.png" className="profileimg" />
             <span className="profilename">Mark John</span>
           </a>
           <Link to="/webportfolio" className="sidenav-home">
-            <img src="/webportfolio/img/home.png" className="menuicon" />
+            <img src="/img/home.png" className="menuicon" />
             <span className="menulabel">Home</span>
           </Link>
           <Link to="/projects" className="sidenav-projects">
-            <img src="/webportfolio/img/projects.png" className="menuicon" />
+            <img src="/img/projects.png" className="menuicon" />
             <span className="menulabel">Projects</span>
           </Link>
           <Link to="/tech" className="sidenav-tools">
             {" "}
-            <img src="/webportfolio/img/tools.png" className="menuicon" />
+            <img src="/img/tools.png" className="menuicon" />
             <span className="menulabel">Tech Skills</span>
           </Link>
           <Link to="/blogs" className="sidenav-blogs">
-            <img src="/webportfolio/img/blogs.png" className="menuicon" />
+            <img src="/img/blogs.png" className="menuicon" />
             <span className="menulabel">Blogs</span>
           </Link>
           <Link to="/contact" className="sidenav-contact">
-            <img src="/webportfolio/img/contact.png" className="menuicon" />
+            <img src="/img/contact.png" className="menuicon" />
             <span className="menulabel">Contact</span>
           </Link>
           <Link to="/settings" className="sidenav-settings">
-            <img src="/webportfolio/img/setting.png" className="menuicon" />
+            <img src="/img/setting.png" className="menuicon" />
             <span className="menulabel">Settings</span>
           </Link>
         </div>
@@ -611,12 +608,9 @@ const Layout = () => {
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
-            <img src="/webportfolio/img/profile-header.jpg" />
+            <img src="/img/profile-header.jpg" />
             <div className="dp-and-resume">
-              <img
-                src="/webportfolio/img/startup-loader.png"
-                className="profile-img"
-              />
+              <img src="/img/startup-loader.png" className="profile-img" />
               <a
                 href="https://storage.googleapis.com/mark-john-portfolio.appspot.com/data/resume/MarkJohnCV.pdf"
                 target="_blank"
