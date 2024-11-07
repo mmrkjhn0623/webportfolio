@@ -139,7 +139,7 @@ const Home = () => {
           <span className="cont-label">
             <b>Tech Skills</b>
           </span>
-          <Link to="/tech" className="cont-upperright">
+          <Link to="/tech-skills" className="cont-upperright">
             See More
           </Link>
         </div>
