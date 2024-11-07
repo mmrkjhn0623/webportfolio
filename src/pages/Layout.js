@@ -337,7 +337,7 @@ const Layout = () => {
             <img src="/img/projects.png" className="menuicon" />
             <span className="menulabel">Projects</span>
           </Link>
-          <Link to="/tech" className="sidenav-tools">
+          <Link to="/tech-skills" className="sidenav-tools">
             {" "}
             <img src="/img/tools.png" className="menuicon" />
             <span className="menulabel">Tech Skills</span>
@@ -863,7 +863,7 @@ const Layout = () => {
                   <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <Link to="/tech">Tech Skills</Link>
+                  <Link to="/tech-skills">Tech Skills</Link>
                 </li>
                 <li>
                   <Link to="/blogs">Blogs</Link>
