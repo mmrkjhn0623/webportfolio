@@ -655,11 +655,11 @@ form.addnewform .form-group {
 .grid-content:hover .admintoggle {
   display: flex;
 }
-#projects .grid-content .itemimg {
+.proj-grid .grid-content .itemimg {
   object-position: 0% 0%;
   transition: all 3s ease;
 }
-#projects .grid-content:hover .itemimg {
+.proj-grid .grid-content:hover .itemimg {
   object-position: 0% 100%;
   transition: all 3s ease;
 }
