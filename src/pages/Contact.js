@@ -51,8 +51,8 @@ const Contact = () => {
         "service_ar0ifgb",
         "template_tgio32o",
         {
-          from_name: document.getElementById("name").value,
           to_name: "MJ",
+          from_name: document.getElementById("name").value,
           message: document.getElementById("message").value,
           reply_to: document.getElementById("email").value,
         },

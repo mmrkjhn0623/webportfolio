@@ -98,7 +98,8 @@ const Home = () => {
   return (
     <>
       <div
-        className="container" /*style={{backgroundColor: "rgba("+themecolor+",0.60)"}}*/
+        className="container"
+        id="projects" /*style={{backgroundColor: "rgba("+themecolor+",0.60)"}}*/
       >
         <div className="cont-header">
           <span className="cont-label">

@@ -655,6 +655,14 @@ form.addnewform .form-group {
 .grid-content:hover .admintoggle {
   display: flex;
 }
+#projects .grid-content .itemimg {
+  object-position: 0% 0%;
+  transition: all 3s ease;
+}
+#projects .grid-content:hover .itemimg {
+  object-position: 0% 100%;
+  transition: all 3s ease;
+}
 .itemimg {
   width: 100%;
   aspect-ratio: 720/540;
