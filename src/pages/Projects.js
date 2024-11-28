@@ -148,7 +148,7 @@ const Projects = () => {
               <b>{categ}</b>
             </span>
           </div>
-          <div class="cont-grid4">
+          <div class="cont-grid4 proj-grid">
             {ProjInCateg.map((val) => {
               return (
                 <div class="grid-content" key={val._id} id={"proj_" + val._id}>

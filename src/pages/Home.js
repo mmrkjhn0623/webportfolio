@@ -98,8 +98,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="container"
-        id="projects" /*style={{backgroundColor: "rgba("+themecolor+",0.60)"}}*/
+        className="container" /*style={{backgroundColor: "rgba("+themecolor+",0.60)"}}*/
       >
         <div className="cont-header">
           <span className="cont-label">
@@ -110,7 +109,7 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="cont-grid4">
+        <div className="cont-grid4 proj-grid">
           {projects.map((val) => {
             return (
               <a
