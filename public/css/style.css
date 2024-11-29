@@ -623,6 +623,37 @@ form.addnewform .form-group {
   gap: 20px;
   text-align: center;
 }
+.tool-grid .grid-content {
+  position: relative;
+}
+.toolinfo {
+  display: none;
+  position: absolute;
+  max-width: 312px;
+  padding: 20px;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-color: #3a3b3c;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 9;
+  top: 65%;
+  right: -90%;
+  text-align: start;
+}
+.toolinfo a {
+  color: #d3d3d3;
+}
+.toolinfo a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.tool-grid .grid-content:hover .toolinfo {
+  display: block;
+}
+.tool-grid .grid-content:nth-child(6n) .toolinfo {
+  right: 0;
+  left: -90%;
+}
 
 .grid-content {
   position: relative;
@@ -978,6 +1009,15 @@ a.addnew:hover {
   .cont-grid6 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .toolinfo {
+    top: 70%;
+    left: 8% !important;
+    right: -35% !important;
+  }
+  .tool-grid .grid-content:nth-child(4n) .toolinfo {
+    right: 8% !important;
+    left: -36% !important;
+  }
 }
 @media only screen and (max-width: 1280px) {
   div.article.home .featuredimg {
@@ -1028,6 +1068,16 @@ a.addnew:hover {
   .cont-grid6 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .toolinfo,
+  .tool-grid .grid-content:nth-child(4) .toolinfo {
+    top: 76%;
+    left: 8% !important;
+    right: -60% !important;
+  }
+  .tool-grid .grid-content:nth-child(3n) .toolinfo {
+    right: 8% !important;
+    left: -14% !important;
+  }
   #bloglist .cont-grid3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1042,6 +1092,9 @@ a.addnew:hover {
   .footer-cont {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+  }
+  .tool-grid .grid-content:hover .toolinfo {
+    display: none;
   }
   .article,
   .profile {

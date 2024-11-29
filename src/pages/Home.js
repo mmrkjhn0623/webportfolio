@@ -144,16 +144,25 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="cont-grid6">
+        <div className="cont-grid6 tool-grid">
           {tools.map((val) => {
             return (
-              <a href={val.url} target="_blank" className="grid-content">
-                <img
-                  src={cloudstorage + "/data/tools/" + val.img}
-                  class="itemimg"
-                />
-                <h4>{val.toolname}</h4>
-              </a>
+              <div className="grid-content">
+                <a href={val.url} target="_blank">
+                  <img
+                    src={cloudstorage + "/data/tools/" + val.img}
+                    class="itemimg"
+                  />
+                  <h4>{val.toolname}</h4>
+                </a>
+                <div className="toolinfo">
+                  <h4 style={{ marginBlock: "0px" }}>{val.toolname}</h4>
+                  <p>{val.caption}</p>
+                  <a href={val.url} target="_blank">
+                    {val.url}
+                  </a>
+                </div>
+              </div>
             );
           })}
         </div>
