@@ -773,7 +773,7 @@ div.article.home {
   flex-direction: row;
   align-items: center;
   gap: 30px;
-  padding: 40px;
+  padding: 0px 40px 0px 0px;
   background-color: #3a3b3c;
   margin: 40px 0px;
 }
@@ -790,15 +790,25 @@ div.article.home {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
+.article.home .featuredimg {
+  aspect-ratio: 220/160;
+  border-radius: 5px 0px 0px 5px;
+}
+.article.home .cont-header {
+  max-width: 640px;
+}
 .article:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+h2.latestpost a {
+  font-size: 36px !important;
 }
 .article p {
   font-size: 16px;
   color: #d3d3d3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   overflow: hidden;
 }
 .post-content {
@@ -1018,11 +1028,14 @@ a.addnew:hover {
     right: 8% !important;
     left: -36% !important;
   }
-}
-@media only screen and (max-width: 1280px) {
   div.article.home .featuredimg {
     aspect-ratio: 1/1;
   }
+  .article.home .cont-header {
+    max-width: 58%;
+  }
+}
+@media only screen and (max-width: 1280px) {
 }
 /*styling for tablet*/
 @media only screen and (max-width: 1180px) {
@@ -1084,6 +1097,9 @@ a.addnew:hover {
   div.profile-overlay {
     padding-left: 0px;
   }
+  h2.latestpost a {
+    font-size: 28px !important;
+  }
 }
 @media only screen and (max-width: 900px) {
   .cont-grid3,
@@ -1109,7 +1125,15 @@ a.addnew:hover {
     padding: 20px 40px 40px 40px;
   }
   div.article.home .featuredimg {
-    aspect-ratio: 280/184;
+    aspect-ratio: 220/160;
+    border-radius: 5px 5px 0px 0px;
+  }
+  div.article.home {
+    padding: 0px;
+  }
+  .article.home .cont-header {
+    max-width: 100%;
+    padding: 0px 30px 30px 30px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -1120,6 +1144,10 @@ a.addnew:hover {
 @media only screen and (max-width: 768px) {
   div.article.home {
     padding: 20px 20px 40px;
+    gap: 0px;
+  }
+  .article.home .cont-header {
+    padding: 0px;
   }
   #bloglist .cont-grid3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1337,6 +1365,16 @@ body.df-theme .grid-content {
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
 }
+body.df-theme .toolinfo {
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+}
+body.df-theme .toolinfo a {
+  color: #595959;
+}
+body.df-theme .toolinfo p {
+  color: #868686;
+}
 body.df-theme input,
 body.df-theme textarea,
 body.df-theme select,
@@ -1465,6 +1503,16 @@ body.sk-theme div.footer h4,
 body.sk-theme div.footer ul li a,
 body.sk-theme div.container.footer {
   color: #926479 !important;
+}
+body.sk-theme .toolinfo {
+  background-color: #faf0f3;
+  border: 1px solid rgba(112, 15, 59, 0.1);
+}
+body.sk-theme .toolinfo a {
+  color: #926479;
+}
+body.sk-theme .toolinfo p {
+  color: #673e51;
 }
 body.sk-theme div.footer ul li a path {
   fill: #926479;
