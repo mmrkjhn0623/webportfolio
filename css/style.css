@@ -627,18 +627,19 @@ form.addnewform .form-group {
   position: relative;
 }
 .toolinfo {
-  display: none;
+  display: block;
   position: absolute;
   max-width: 312px;
   padding: 20px;
-  /* background-color: rgba(0, 0, 0, 0.9); */
+  opacity: 0;
   background-color: #3a3b3c;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 9;
+  z-index: -1;
   top: 65%;
   right: -90%;
   text-align: start;
+  transition: all 0.3s ease-in-out;
 }
 .toolinfo a {
   color: #d3d3d3;
@@ -648,7 +649,9 @@ form.addnewform .form-group {
   text-decoration: underline;
 }
 .tool-grid .grid-content:hover .toolinfo {
-  display: block;
+  z-index: 9;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 .tool-grid .grid-content:nth-child(6n) .toolinfo {
   right: 0;
@@ -792,7 +795,7 @@ div.article.home {
 }
 .article.home .featuredimg {
   aspect-ratio: 220/160;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 10px 0px 0px 10px;
 }
 .article.home .cont-header {
   max-width: 640px;
