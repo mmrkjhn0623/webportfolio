@@ -726,7 +726,7 @@ const Layout = () => {
           style={{ backgroundColor: "transparent", color: "#868686" }}
         >
           <div className="footer-cont">
-            <div>
+            <div className="item socials">
               <div className="cont-label">
                 <h4>Social Media</h4>
               </div>
@@ -806,7 +806,7 @@ const Layout = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="item contacts">
               <div className="cont-label">
                 <h4>Contacts</h4>
               </div>
@@ -851,7 +851,7 @@ const Layout = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="item quicklinks">
               <div className="cont-label">
                 <h4>Quick Link</h4>
               </div>
@@ -870,7 +870,7 @@ const Layout = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="item newsletter">
               <div className="cont-label">
                 <h4>Join To My Newsletter</h4>
               </div>
