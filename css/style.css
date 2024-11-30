@@ -18,7 +18,7 @@ h3,
 h4 {
   font-weight: 500 !important;
 }
-p {
+p, li {
   line-height: 1.4;
 }
 button,
@@ -1463,7 +1463,8 @@ body.df-theme .deletion a:hover {
 body.df-theme a.cont-upperright,
 body.df-theme .post-content p, 
 body.df-theme .post-content code,
-body.df-theme .post-content li{
+body.df-theme .post-content li,
+body.df-theme .post-content strong{
   color: #595959;
 }
 body.df-theme .grid-content p,
@@ -1567,7 +1568,8 @@ body.sk-theme li#telno path {
 body.sk-theme a.cont-upperright,
 body.sk-theme .post-content p,
 body.sk-theme .post-content code,
-body.sk-theme .post-content li{
+body.sk-theme .post-content li,
+body.sk-theme .post-content strong{
   color: #673e51;
 }
 body.sk-theme .itemimg {
