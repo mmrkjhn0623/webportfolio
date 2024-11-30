@@ -321,7 +321,7 @@ a:link {
   height: 100%;
   background-color: #242526;
   align-items: center;
-  transition: width 6s ease;
+  transition: all 0.3s ease;
 }
 
 .sidebar-content {
@@ -1166,8 +1166,8 @@ a.addnew:hover {
 
   #sideNav {
     position: fixed;
-    width: 0px;
-    transition: width 6s ease;
+    left: -100px;
+    transition: all 2s ease;
   }
 
   .content {
@@ -1280,6 +1280,9 @@ a.addnew:hover {
   }
   .cont-grid4 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .cont-grid4.settings {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-content h3,
   .profile-info h4 {
