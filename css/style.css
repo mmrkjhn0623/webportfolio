@@ -808,6 +808,9 @@ div.article.home {
 .article.home .cont-header {
   max-width: 640px;
 }
+.article.home > a{
+  margin-bottom: -4px !important;
+}
 .article:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
