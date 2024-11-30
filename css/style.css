@@ -1461,7 +1461,8 @@ body.df-theme .deletion a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 body.df-theme a.cont-upperright,
-body.df-theme .post-content p {
+body.df-theme .post-content p, 
+body.df-theme .post-content code{
   color: #595959;
 }
 body.df-theme .grid-content p,
@@ -1563,7 +1564,8 @@ body.sk-theme li#telno path {
   fill: transparent;
 }
 body.sk-theme a.cont-upperright,
-body.sk-theme .post-content p {
+body.sk-theme .post-content p,
+body.sk-theme .post-content code{
   color: #673e51;
 }
 body.sk-theme .itemimg {
