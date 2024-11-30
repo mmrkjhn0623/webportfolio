@@ -322,6 +322,7 @@ a:link {
   background-color: #242526;
   align-items: center;
   transition: all 0.3s ease;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-content {
