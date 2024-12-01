@@ -199,14 +199,24 @@ input[type="submit"] {
   margin: 10px 15px;
   background-color: #242526;
   border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   top: 0;
-  left: 0;
+  right: 0;
   text-align: center;
   cursor: pointer;
   display: none;
 }
 .menu-toggle .fa {
   font-size: 18px;
+}
+.menu-toggle .fa-close {
+  display: none;
+}
+#menu-toggle.active .fa-close {
+  display: block;
+}
+#menu-toggle.active .fa-bars {
+  display: none;
 }
 .overlay {
   width: 100vw;
@@ -323,13 +333,17 @@ a:link {
   align-items: center;
   transition: all 0.3s ease;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
 }
 
 .sidebar-content {
-  margin-top: 10%;
   left: 0;
   padding: 20px;
+  height: 100vh;
   overflow-x: hidden;
+}
+.sidebar-content svg {
+  margin-right: 10px;
 }
 /* Side navigation links */
 .sidenav a,
@@ -344,7 +358,10 @@ a:link {
   border-radius: 10px;
   transition: background-color 0.1s;
 }
-
+.profileimg {
+  aspect-ratio: 1/1;
+  width: 36px;
+}
 .menuicon {
   width: 32px;
   padding: 5px 10px 5px 5px;
@@ -1047,7 +1064,10 @@ a.addnew:hover {
 /*styling for tablet*/
 @media only screen and (max-width: 1180px) {
   .sidebar-content {
-    margin-top: 40px;
+    padding: 0px;
+  }
+  .sidebar-content svg {
+    margin-right: 0px;
   }
   .sidenav a {
     border-radius: 0px;
@@ -1059,15 +1079,11 @@ a.addnew:hover {
   }
 
   .profileimg {
-    height: 32px;
+    width: 32px;
   }
-
-  .sidebar-content {
-    padding: 0px;
-  }
-
-  .menuicon {
-    margin-left: 4px;
+  .sidenav a,
+  .profile {
+    justify-content: center;
   }
 
   .content {
@@ -1119,8 +1135,7 @@ a.addnew:hover {
   .tool-grid .grid-content:hover .toolinfo {
     display: none;
   }
-  .article,
-  .profile {
+  .article {
     flex-direction: column !important;
   }
   .article .featuredimg,
@@ -1167,10 +1182,44 @@ a.addnew:hover {
 
   #sideNav {
     position: fixed;
-    left: -100px;
-    transition: all 2s ease;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0px;
+    padding-top: 0px;
+    transition: all 0.3s ease 0.2s;
+    z-index: -1;
+    opacity: 0;
   }
-
+  #sideNav.active {
+    transition: all 0.2s ease;
+    z-index: 9;
+    opacity: 1;
+  }
+  .sidebar-content {
+    position: absolute;
+    background-color: #242526;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 168px;
+    transition: all 0.2s ease;
+    width: 100%;
+    left: -100%;
+  }
+  #sideNav.active .sidebar-content {
+    transition: all 0.3s ease 0.2s;
+    left: 0;
+  }
+  .sidenav a,
+  .profile {
+    justify-content: flex-start;
+  }
+  .menulabel,
+  .profilename,
+  .profilelink {
+    display: block;
+  }
+  .sidebar-content svg {
+    margin-right: 10px;
+  }
   .content {
     padding-left: 10px;
     padding-right: 10px;
@@ -1354,7 +1403,8 @@ a.addnew:hover {
 
 /*DF Theme*/
 body.df-theme .sidenav,
-body.df-theme .menu-toggle {
+body.df-theme .menu-toggle,
+body.df-theme .sidebar-content {
   background-color: #23282d;
 }
 body.df-theme #root {
@@ -1509,7 +1559,8 @@ body.df-theme .post-content h5 {
 
 /*Pink Theme*/
 body.sk-theme .sidenav,
-body.sk-theme .menu-toggle {
+body.sk-theme .menu-toggle,
+body.sk-theme .sidebar-content {
   background-color: #700f3b;
 }
 body.sk-theme #root {

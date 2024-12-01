@@ -63,25 +63,21 @@ export const cloudstorage =
 export function Menutoggled() {
   if (window.innerWidth <= 600) {
     if (document.getElementById("sideNav").classList.contains("active")) {
-      document.getElementById("sideNav").style.transition = "all 0.3s ease";
-      document.getElementById("sideNav").style.left = "-100px";
-
       document.getElementById("sideNav").classList.remove("active");
+      document.getElementById("menu-toggle").classList.remove("active");
     } else {
-      document.getElementById("sideNav").style.transition = "all 0.3s ease";
-      document.getElementById("sideNav").style.left = "0px";
-
       document.getElementById("sideNav").classList.add("active");
+      document.getElementById("menu-toggle").classList.add("active");
     }
   }
 }
 
 export function CloseSidenav() {
   if (window.innerWidth > 600) {
-    document.getElementById("sideNav").style.left = "0px";
     document.getElementById("sideNav").classList.add("active");
+    document.getElementById("menu-toggle").classList.add("active");
   } else {
-    document.getElementById("sideNav").style.left = "-100px";
     document.getElementById("sideNav").classList.remove("active");
+    document.getElementById("menu-toggle").classList.remove("active");
   }
 }
