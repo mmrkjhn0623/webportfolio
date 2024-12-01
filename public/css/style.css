@@ -18,7 +18,11 @@ h3,
 h4 {
   font-weight: 500 !important;
 }
-p {
+p,
+a,
+li,
+code,
+strong {
   line-height: 1.4;
 }
 button,
@@ -194,6 +198,7 @@ input[type="submit"] {
   position: fixed;
   z-index: 99;
   width: 42px;
+  height: 42px;
   color: #ffffff;
   padding: 10px;
   margin: 10px 15px;
@@ -1338,9 +1343,16 @@ a.addnew:hover {
   .profile-info h4 {
     font-size: 14px !important;
   }
+  .post-content h3,
+  .post-content h4 {
+    font-size: 16px;
+  }
   .grid-content p,
   body p,
   body a,
+  body strong,
+  body li,
+  body code,
   .profile-info li,
   .homeform input,
   .contactform input,
@@ -1508,8 +1520,8 @@ body.df-theme .deletion a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 body.df-theme a.cont-upperright,
-body.df-theme .post-content p {
-  color: #595959;
+body.df-theme .post-content * {
+  color: #2d2d2d;
 }
 body.df-theme .grid-content p,
 body.df-theme .article p,
@@ -1554,7 +1566,7 @@ body.df-theme .post-content h2,
 body.df-theme .post-content h3,
 body.df-theme .post-content h4,
 body.df-theme .post-content h5 {
-  color: #595959;
+  color: #2d2d2d;
 }
 
 /*Pink Theme*/
@@ -1611,8 +1623,8 @@ body.sk-theme li#telno path {
   fill: transparent;
 }
 body.sk-theme a.cont-upperright,
-body.sk-theme .post-content p {
-  color: #673e51;
+body.sk-theme .post-content * {
+  color: #700f3b;
 }
 body.sk-theme .itemimg {
   background-color: rgba(242, 206, 218, 0.8);
@@ -1669,5 +1681,5 @@ body.sk-theme .post-content h2,
 body.sk-theme .post-content h3,
 body.sk-theme .post-content h4,
 body.sk-theme .post-content h5 {
-  color: #673e51;
+  color: #700f3b;
 }
