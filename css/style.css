@@ -438,7 +438,13 @@ a:link {
   padding: 20px 40px 40px 40px;
   margin: 40px auto;
 }
-
+#bloglist {
+  background-color: transparent !important;
+  padding-inline: 0px !important;
+}
+#bloglist .article {
+  background-color: #242526;
+}
 .content-heading {
   text-align: center;
   margin-bottom: 40px;
