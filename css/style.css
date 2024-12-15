@@ -1471,7 +1471,7 @@ body.sk-theme .career-and-skill li::before {
   filter: brightness(0.4);
 }
 body.df-theme .grid-content {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border: 1px solid #d3d3d3;
 }
 body.df-theme .toolinfo {
