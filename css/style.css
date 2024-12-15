@@ -1597,7 +1597,7 @@ body.sk-theme .container,
 body.sk-theme div.article.home,
 body.sk-theme .grid-content {
   border: 1px solid rgba(112, 15, 59, 0.1);
-  background-color: #faf0f3;
+  background-color: #faf0f3 !important;
 }
 body.sk-theme .grid-content h3,
 body.sk-theme .grid-content h4,
