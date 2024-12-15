@@ -1444,7 +1444,7 @@ body.sk-theme div.article.home {
   background-color: rgba(255, 255, 255, 0.5) !important;
   border: 1px solid #d3d3d3;
 }
-body.df-them #bloglist{
+body.df-theme #bloglist, body.sk-theme #bloglist{
   border: 0px !important;
 }
 body.df-theme .profile-cont {
