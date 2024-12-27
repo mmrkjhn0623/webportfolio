@@ -438,7 +438,20 @@ a:link {
   padding: 20px 40px 40px 40px;
   margin: 40px auto;
 }
-
+#bloglist {
+  background-color: transparent !important;
+  padding-inline: 0px !important;
+  padding-top: 0px;
+}
+#bloglist .article {
+  background-color: #242526;
+}
+#bloglist .article h4{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 .content-heading {
   text-align: center;
   margin-bottom: 40px;
@@ -1438,6 +1451,9 @@ body.sk-theme div.article.home {
   background-color: rgba(255, 255, 255, 0.5) !important;
   border: 1px solid #d3d3d3;
 }
+body.df-theme #bloglist, body.sk-theme #bloglist{
+  border: 0px !important;
+}
 body.df-theme .profile-cont {
   background-color: #ffffff !important;
   color: #2d2d2d !important;
@@ -1462,7 +1478,7 @@ body.sk-theme .career-and-skill li::before {
   filter: brightness(0.4);
 }
 body.df-theme .grid-content {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border: 1px solid #d3d3d3;
 }
 body.df-theme .toolinfo {
@@ -1588,7 +1604,7 @@ body.sk-theme .container,
 body.sk-theme div.article.home,
 body.sk-theme .grid-content {
   border: 1px solid rgba(112, 15, 59, 0.1);
-  background-color: #faf0f3;
+  background-color: #faf0f3 !important;
 }
 body.sk-theme .grid-content h3,
 body.sk-theme .grid-content h4,

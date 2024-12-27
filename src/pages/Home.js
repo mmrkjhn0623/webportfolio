@@ -81,14 +81,14 @@ const Home = () => {
   };
 
   const loadLatestBlog = () => {
-    Axios.get("getlatestblog").then((response) => {
+    Axios.get("https://newsapi.org/v2/top-headlines?category=technology&pageSize=1&apiKey=c2bf1e3109d1416b8edf4454d90d3949").then((response) => {
       /*document.getElementById('loadercont').style.display = "none";
         document.getElementById('content').style.display = "block";*/
       const obj = response.data;
       if (!Object.keys(response.data).length) {
         navigate("/");
       } else {
-        setLatestBlog(response.data);
+        setLatestBlog(response.data.articles);
       }
     });
   };
@@ -180,25 +180,16 @@ const Home = () => {
         {latestblog.map((val) => {
           return (
             <div className="container article home">
-              <Link
-                to={{ pathname: "/post/" + val.slug }}
-                style={{ marginBottom: "-7px" }}
-              >
-                <img
-                  src={cloudstorage + "/data/featuredimg/" + val.featuredimg}
-                  class="featuredimg"
-                />
-              </Link>
+              <a href={ val.url } target="_blank" style={{ marginBottom: "-7px" }}>
+                <img src={ val.urlToImage } class="featuredimg" />
+              </a>
               <div className="cont-header" style={{ paddingBottom: "7px" }}>
                 <h2 className="latestpost">
-                  <Link
-                    to={{ pathname: "/post/" + val.slug }}
-                    className="cont-label"
-                  >
+                  <a href={ val.url } target="_blank" className="cont-label">
                     {val.title}
-                  </Link>
+                  </a>
                 </h2>
-                <p>{val.excerpt}</p>
+                <p>{val.description}</p>
               </div>
             </div>
           );
