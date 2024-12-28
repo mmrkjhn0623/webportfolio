@@ -183,7 +183,7 @@ const Home = () => {
               <div className="container article home">
                 <Link to={{ pathname: '/post/'+val.slug }}><img src={cloudstorage+"/data/featuredimg/"+val.featuredimg} class="featuredimg" /></Link>
                 <div className="cont-header">
-                  <Link to={{ pathname: '/post/'+val.slug }} className="cont-label"><b>{val.title}</b></Link>
+                  <h2 className="latestpost"><Link to={{ pathname: '/post/'+val.slug }} className="cont-label">{val.title}</Link></h2>
                   <p>{val.excerpt}</p>
                 </div>  
               </div>
