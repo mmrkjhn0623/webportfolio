@@ -20,13 +20,13 @@ const Blogs = () => {
     const loadbloglist = () => {
         document.getElementById('loadercont').style.display = "block";
         document.getElementById('content').style.display = "none";
-        Axios.get("https://newsapi.org/v2/top-headlines?category=technology&pageSize=15&apiKey=c2bf1e3109d1416b8edf4454d90d3949").then((response) => {
+        Axios.get("getbloglist").then((response) => {
             const obj = response.data;
             if (!Object.keys(response.data).length) {
                 navigate("/blogs");
             }
             else{
-                setblogList(response.data.articles);
+                setblogList(response.data);
                 showContent();
                 CloseSidenav();
             }
@@ -45,11 +45,11 @@ const Blogs = () => {
         blogList.map((val)=> {
             return (
                 <div className="grid-content article" /*style={{backgroundColor: "rgba("+themecolor+",0.60)"}}*/>
-                    <a href={ val.url } target="_blank"><img src={val.urlToImage} class="featuredimg" /></a>
-                    <div className="cont-header">
-                        <h4><a href={ val.url } target="_blank" className="cont-label">{val.title}</a></h4>
-                        <p>{val.description}</p>
-                    </div>  
+                <Link to={{ pathname: '/post/'+val.slug }}><img src={cloudstorage+"/data/featuredimg/"+val.featuredimg} class="featuredimg" /></Link>
+                <div className="cont-header">
+                <h4><Link to={{ pathname: '/post/'+val.slug }} className="cont-label">{val.title}</Link></h4>
+                <p>{val.excerpt}</p>
+                </div>  
                 </div>
             );
         })

@@ -839,6 +839,7 @@ div.article.home {
 .article.home .featuredimg {
   aspect-ratio: 220/160;
   border-radius: 10px 0px 0px 10px;
+  margin-bottom: -7px;
 }
 .article.home .cont-header {
   max-width: 640px;
@@ -1171,6 +1172,9 @@ a.addnew:hover {
   div.article.home {
     padding: 0px;
   }
+  .article.home .featuredimg {
+    margin-bottom: 0px;
+  }
   .article.home .cont-header {
     max-width: 100%;
     padding: 0px 30px 30px 30px;
@@ -1188,6 +1192,9 @@ a.addnew:hover {
   }
   .article.home .cont-header {
     padding: 0px;
+  }
+  .article.home .featuredimg {
+    margin-bottom: 16px;
   }
   #bloglist .cont-grid3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));

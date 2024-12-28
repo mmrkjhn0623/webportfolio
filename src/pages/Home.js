@@ -81,17 +81,18 @@ const Home = () => {
   };
 
   const loadLatestBlog = () => {
-    Axios.get("https://newsapi.org/v2/top-headlines?category=technology&pageSize=1&apiKey=c2bf1e3109d1416b8edf4454d90d3949").then((response) => {
-      /*document.getElementById('loadercont').style.display = "none";
+    Axios.get("getlatestblog").then((response) => {
+        /*document.getElementById('loadercont').style.display = "none";
         document.getElementById('content').style.display = "block";*/
-      const obj = response.data;
-      if (!Object.keys(response.data).length) {
-        navigate("/");
-      } else {
-        setLatestBlog(response.data.articles);
-      }
+        const obj = response.data;
+        if (!Object.keys(response.data).length) {
+            navigate("/");
+        }
+        else {
+          setLatestBlog(response.data);
+        }
     });
-  };
+  }
 
   const themecolor = localStorage.getItem("themecolor");
 
@@ -177,23 +178,18 @@ const Home = () => {
             See More
           </Link>
         </div>
-        {latestblog.map((val) => {
-          return (
-            <div className="container article home">
-              <a href={ val.url } target="_blank" style={{ marginBottom: "-7px" }}>
-                <img src={ val.urlToImage } class="featuredimg" />
-              </a>
-              <div className="cont-header" style={{ paddingBottom: "7px" }}>
-                <h2 className="latestpost">
-                  <a href={ val.url } target="_blank" className="cont-label">
-                    {val.title}
-                  </a>
-                </h2>
-                <p>{val.description}</p>
+        {latestblog.map((val)=>{
+            return (
+              <div className="container article home">
+                <Link to={{ pathname: '/post/'+val.slug }}><img src={cloudstorage+"/data/featuredimg/"+val.featuredimg} class="featuredimg" /></Link>
+                <div className="cont-header">
+                  <Link to={{ pathname: '/post/'+val.slug }} className="cont-label"><b>{val.title}</b></Link>
+                  <p>{val.excerpt}</p>
+                </div>  
               </div>
-            </div>
-          );
-        })}
+            )
+          })
+        }
       </div>
       <div></div>
     </>
