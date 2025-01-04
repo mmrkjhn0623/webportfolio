@@ -33,28 +33,9 @@ const Layout = () => {
 
   const navigate = useNavigate();
 
-  // const [themecolor, setThemeColor] = useState("0,0,0");
-  //const [bgimage, setBgImage] = useState('bg4.jpg');
-
   useEffect(() => {
     ThemeSetup();
     CloseSidenav();
-    /*  setBgImage(localStorage.getItem("bgimage"));
-        document.getElementById("overlay").style.backgroundColor = "rgba("+themecolor+",0.60)";
-
-        if(localStorage.getItem("bgimage") !== null){
-            document.getElementById('root').style.backgroundImage = 'url(../bg-image/'+bgimage+')';
-        }
-        else{
-            document.getElementById('root').style.backgroundImage = 'url(../bg-image/bg4.jpg)';
-        }
-        if(localStorage.getItem("themecolor") !== null){
-            setThemeColor(localStorage.getItem("themecolor"));
-        }
-        else{
-            localStorage.setItem("themecolor","0,0,0");
-            setThemeColor(localStorage.getItem("themecolor"));
-        }*/
   });
 
   function openModal() {
@@ -974,7 +955,7 @@ const Layout = () => {
             </div>
           </div>
           <p style={{ textAlign: "center" }}>
-            © 2024 Mark John Portfolio. All Rights Reserved.
+            © { formatDate().slice(-4) } Mark John Portfolio. All Rights Reserved.
           </p>
         </div>
       </div>
