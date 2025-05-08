@@ -14,15 +14,8 @@ import Axios from "axios";
 
 window.onresize = CloseSidenav;
 
-document.addEventListener("click", function (e) {
-  /* let adminactiontoggles = document.querySelectorAll('.adminaction');
-    adminactiontoggles.forEach((toggle) =>{
-
-      if(toggle.classList.contains('toggled')){
-        toggle.classList.remove('toggled');
-      }
-
-    }); */
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
 });
 
 const Layout = () => {
@@ -725,6 +718,23 @@ const Layout = () => {
               </div>
               <div className="career-and-skill">
                 <h3>Career Info</h3>
+                <h4>
+                  Cloudesk Pty Ltd. - Full Stack Developer (January 2025 - Present)
+                </h4>
+                <p>
+                As a Full Stack Developer, I am responsible for designing, developing, and maintaining both front-end and back-end components of web applications. I also work with databases, servers, APIs, and client interfaces to deliver complete, functional solutions from concept to deployment.
+                </p>
+                <ul>
+                  <li className="company-address">
+                    Sydney, New South Wales, Australia · Remote
+                  </li>
+                  <li className="company-contact">NA</li>
+                  <li className="company-site">
+                    <a href="https://cloudesk.co/" target="_blank">
+                      https://cloudesk.co/
+                    </a>
+                  </li>
+                </ul>
                 <h4>
                   RipeConcepts - Wordpress Developer (July 2022 - Sept 2024)
                 </h4>
